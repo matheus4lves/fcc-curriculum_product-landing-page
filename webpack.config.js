@@ -2,8 +2,8 @@ const { merge } = require("webpack-merge");
 const parts = require("./webpack.parts");
 const mode = process.env.mode;
 
-const commonConfig = merge([{ entry: ["./src/scripts"] }]);
-const devConfig = merge([parts.devOutput(), parts.devServer()]);
+const commonConfig = merge([{ entry: ["./src/scripts"] }, parts.loadPostcss()]);
+const devConfig = merge([parts.output(), parts.devServer()]);
 
 const getConfig = mode => {
   switch (mode) {

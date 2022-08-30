@@ -1,6 +1,7 @@
 const path = require("path");
 const postcssPlugins = [require("postcss-mixins"), require("postcss-nested"), require("postcss-simple-vars"), require("autoprefixer")];
 const { mergeWithRules } = require("webpack-merge");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const cssConfig = {
   module: {
@@ -33,7 +34,18 @@ const postcssConfig = {
   },
 };
 
-const mergedCssConfig = mergeWithRules({
+const htmlConfig = {
+  module: {
+    rules: [
+      {
+        test: /\.html$/i,
+        use: ["html-loader"],
+      },
+    ],
+  },
+};
+
+const moduleConfig = mergeWithRules({
   module: {
     rules: {
       test: "match",
@@ -43,7 +55,7 @@ const mergedCssConfig = mergeWithRules({
       },
     },
   },
-})(cssConfig, postcssConfig);
+})(cssConfig, postcssConfig, htmlConfig);
 
 exports.devServer = () => ({
   devServer: {
@@ -51,16 +63,24 @@ exports.devServer = () => ({
     liveReload: true,
     port: parseInt(process.env.PORT, 10) || 8080,
     static: {
-      directory: path.join(__dirname, "src"),
+      directory: path.join(__dirname, "dist"),
     },
   },
 });
 
 exports.output = () => ({
   output: {
-    path: path.resolve(__dirname, "src"),
+    path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
   },
 });
 
-exports.loadPostcss = () => mergedCssConfig;
+exports.moduleConfig = () => moduleConfig;
+
+exports.page = () => ({
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+    }),
+  ],
+});

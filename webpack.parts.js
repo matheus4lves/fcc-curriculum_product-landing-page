@@ -45,18 +45,6 @@ const htmlConfig = {
   },
 };
 
-const moduleConfig = mergeWithRules({
-  module: {
-    rules: {
-      test: "match",
-      use: {
-        loader: "match",
-        options: "replace",
-      },
-    },
-  },
-})(cssConfig, postcssConfig, htmlConfig);
-
 exports.devServer = () => ({
   devServer: {
     host: "local-ip",
@@ -75,7 +63,18 @@ exports.output = () => ({
   },
 });
 
-exports.moduleConfig = () => moduleConfig;
+exports.moduleConfig = () =>
+  mergeWithRules({
+    module: {
+      rules: {
+        test: "match",
+        use: {
+          loader: "match",
+          options: "replace",
+        },
+      },
+    },
+  })(cssConfig, postcssConfig, htmlConfig);
 
 exports.page = () => ({
   plugins: [

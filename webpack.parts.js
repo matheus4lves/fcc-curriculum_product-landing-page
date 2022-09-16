@@ -1,5 +1,5 @@
 const path = require("path");
-const postcssPlugins = [require("postcss-mixins"), require("postcss-nested"), require("postcss-simple-vars"), require("autoprefixer")];
+const postcssPlugins = [require("postcss-mixins"), require("postcss-nested"), require("postcss-simple-vars"), require("autoprefixer"), require("postcss-import")];
 const { mergeWithRules } = require("webpack-merge");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
@@ -63,18 +63,12 @@ exports.output = () => ({
   },
 });
 
-exports.moduleConfig = () =>
+exports.module = () =>
   mergeWithRules({
     module: {
-      rules: {
-        test: "match",
-        use: {
-          loader: "match",
-          options: "replace",
-        },
-      },
+      rules: ["append"],
     },
-  })(cssConfig, postcssConfig, htmlConfig);
+  })(htmlConfig, cssConfig, postcssConfig);
 
 exports.page = () => ({
   plugins: [

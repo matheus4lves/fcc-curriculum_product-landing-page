@@ -1,0 +1,5 @@
+.site-header {
+  display: flex;
+  background-color: $header-bg;
+  block-size: 8.75rem;
+}

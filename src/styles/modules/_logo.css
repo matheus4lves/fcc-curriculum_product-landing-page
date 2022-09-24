@@ -1,0 +1,6 @@
+.logo {
+  grid-row: 1 / 3;
+  grid-column: 1 / 5;
+  inline-size: 305px;
+  block-size: 84px;
+}

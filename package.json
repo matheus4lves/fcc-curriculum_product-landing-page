@@ -34,6 +34,8 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@fontsource/lato": "^4.5.9",
+    "@fontsource/montserrat": "^4.5.12",
     "normalize.css": "^8.0.1",
     "purgecss-webpack-plugin": "^5.0.0"
   }

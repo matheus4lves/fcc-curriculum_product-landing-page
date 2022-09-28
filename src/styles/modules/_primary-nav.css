@@ -1,0 +1,27 @@
+.primary-nav {
+  grid-row: 1 / 2;
+  grid-column: 5 / 11;
+  text-transform: uppercase;
+  margin-block-start: -21px;
+
+  &__list {
+    display: flex;
+    list-style-type: none;
+  }
+
+  &__item {
+    padding-inline-start: 37px;
+  }
+
+  &__item:first-child {
+    padding-inline-start: 0;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-size: 1.25rem;
+    color: $text-light;
+  }
+}

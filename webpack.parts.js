@@ -18,6 +18,8 @@ const cssConfig = {
   },
 };
 
+// Do not use style-loader and mini-css-extract-plugin together.
+// See: https://www.npmjs.com/package/mini-css-extract-plugin
 const productionCssConfig = {
   module: {
     rules: [
@@ -108,4 +110,18 @@ exports.eliminateUnusedCss = () => ({
       paths: ALL_FILES, // Consider extracting as a parameter
     }),
   ],
+});
+
+exports.loadJavaScript = () => ({
+  module: {
+    rules: [
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+        },
+      },
+    ],
+  },
 });

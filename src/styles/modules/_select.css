@@ -1,0 +1,15 @@
+.select {
+  position: absolute;
+  top: 7px;
+  left: 0px;
+  appearance: none;
+  background-color: transparent;
+  color: $text-dark;
+  border: none;
+  font-size: 1rem;
+  font-family: "Montserrat";
+  padding-inline-start: 28px;
+  padding-inline-end: 8px;
+  padding-block-end: 8px;
+  outline: none;
+}

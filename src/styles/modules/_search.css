@@ -1,0 +1,42 @@
+.search {
+  grid-row: 2 / 3;
+  grid-column: 5 / 11;
+  position: relative;
+  top: 10px;
+  display: flex;
+  background-color: $text-light;
+  height: 32px;
+  border-radius: 8px;
+
+  &__select-wrapper::before {
+    content: url("/src/images/dropdown-icon-12.png");
+    position: absolute;
+    top: 6px;
+    left: 8px;
+  }
+
+  &__input {
+    background: transparent;
+    border: inherit;
+    padding-inline-start: 105px;
+    width: 100%;
+  }
+
+  &__input:focus {
+    outline: none;
+  }
+
+  &__btn {
+    width: 40px;
+    overflow: hidden;
+    text-indent: -999px;
+    border: inherit;
+    border-radius: inherit;
+    padding: 0;
+    margin: 0;
+    background: url("/src/images/magnifier-icon.png") center/20px 20px no-repeat;
+    cursor: pointer;
+    position: relative;
+    right: -2px;
+  }
+}

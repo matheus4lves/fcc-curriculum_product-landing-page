@@ -1,0 +1,34 @@
+.product-nav {
+  background-color: #124559;
+  height: 40px;
+
+  &__list {
+    list-style-type: none;
+    margin-block: 0;
+    padding-inline-start: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+  }
+
+  &__item {
+    padding-inline: 19.5px;
+    padding-block: 8px;
+  }
+
+  &__item:last-child {
+    padding-inline-end: 0;
+  }
+
+  &__link {
+    color: $text-light;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 20px "Montserrat";
+  }
+
+  &__link:hover {
+    color: #01161e;
+  }
+}

@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 16.625rem;
+  padding-block: 64px;
 
   &__text {
     color: #505656;

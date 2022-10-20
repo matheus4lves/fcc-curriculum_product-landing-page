@@ -14,7 +14,7 @@
     color: $text-light;
     text-decoration: none;
     text-transform: uppercase;
-    font: 20px "Montserrat";
+    font: 1.25rem "Montserrat";
     line-height: 0.7;
   }
 }

@@ -1,0 +1,48 @@
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 16.625rem;
+
+  &__text {
+    color: #505656;
+    text-transform: uppercase;
+    font: 2rem "Montserrat";
+    font-weight: 900;
+    line-height: 0.8;
+    margin: 0;
+  }
+
+  &__input {
+    width: 21rem;
+    background-color: #124559;
+    border-radius: 5px;
+    padding: 4px 8px;
+    border: 2px solid #01161e;
+    margin-block: 16px;
+    color: $text-light;
+    font: 1rem "Montserrat";
+  }
+
+  &__input::placeholder {
+    color: $text-light;
+    font: 1rem "Montserrat";
+  }
+
+  &__btn {
+    color: #124559;
+    text-transform: uppercase;
+    /* When using @fontsource, font-style must be declared separately */
+    font: 1.5rem "Montserrat";
+    font-style: italic;
+    font-weight: 900;
+    line-height: 1;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffd511;
+    padding-block: 16px;
+    padding-inline: 10px;
+    box-shadow: 2px 2px #124559;
+  }
+}

@@ -2,16 +2,6 @@
   color: $text-dark;
   line-height: 1.55;
 
-  &__heading {
-    grid-column: 1/13;
-    text-transform: uppercase;
-    font: 1.5rem "Montserrat";
-    font-weight: 900;
-    line-height: 1;
-    margin: 0;
-    padding-block-end: 32px;
-  }
-
   &__content {
     grid-column: 7 / 13;
   }

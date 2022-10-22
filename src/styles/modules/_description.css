@@ -1,6 +1,6 @@
 .description {
   color: $text-dark;
-  line-height: 1.62;
+  line-height: 1.55;
 
   &__heading {
     grid-column: 1/13;
@@ -12,9 +12,6 @@
     padding-block-end: 32px;
   }
 
-  &__gallery {
-    grid-column: 1 / 7;
-  }
   &__content {
     grid-column: 7 / 13;
   }

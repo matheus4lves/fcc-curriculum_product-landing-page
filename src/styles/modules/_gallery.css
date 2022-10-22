@@ -1,0 +1,32 @@
+.gallery {
+  grid-column: 1 / 7;
+  border: 2px solid #333;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  align-items: center;
+  padding: 8px 66.5px;
+
+  &__img-main img {
+    display: block;
+    width: 375px;
+    object-fit: cover;
+  }
+
+  &__img-thumbnail {
+    display: flex;
+    align-self: flex-start;
+    justify-content: flex-start;
+    column-gap: 8px;
+  }
+
+  &__img-thumbnail img {
+    display: block;
+    width: 106px;
+  }
+
+  &__img-thumbnail img:first-child {
+    border: 1px solid #816a00;
+  }
+}

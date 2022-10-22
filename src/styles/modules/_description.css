@@ -1,0 +1,41 @@
+.description {
+  color: $text-dark;
+  line-height: 1.62;
+
+  &__heading {
+    grid-column: 1/13;
+    text-transform: uppercase;
+    font: 1.5rem "Montserrat";
+    font-weight: 900;
+    line-height: 1;
+    margin: 0;
+    padding-block-end: 32px;
+  }
+
+  &__gallery {
+    grid-column: 1 / 7;
+  }
+  &__content {
+    grid-column: 7 / 13;
+  }
+
+  &__title {
+    font: 1.125rem "Montserrat";
+    font-weight: 900;
+    font: 1.125rem "Montserrat";
+    font-weight: 900;
+    line-height: inherit;
+    margin-block-start: -5px;
+  }
+
+  &__text {
+    font: 1rem "Lato";
+    line-height: inherit;
+    letter-spacing: -1px;
+  }
+
+  &__text--bold {
+    font-weight: 700;
+    letter-spacing: normal;
+  }
+}

@@ -10,4 +10,5 @@ html {
 
 body {
   background-color: whitesmoke;
+  color: $text-dark;
 }

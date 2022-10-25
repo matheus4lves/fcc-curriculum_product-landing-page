@@ -1,0 +1,38 @@
+.details {
+  padding-block-start: 32px;
+
+  &__list {
+    list-style-type: none;
+    margin-block: 0;
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: 1fr auto repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item p {
+    margin-block: 0;
+    font: 1rem "Lato";
+    line-height: 1;
+    padding-block-start: 8px;
+    text-align: center;
+  }
+
+  &__item span {
+    font: 1.125rem "Montserrat";
+    font-weight: 900;
+    line-height: 1;
+    display: inline-block;
+    padding-block-end: 5px;
+  }
+
+  &__icon {
+    height: 30px;
+  }
+}

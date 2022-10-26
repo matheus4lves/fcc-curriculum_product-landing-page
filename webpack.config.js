@@ -8,7 +8,7 @@ const prodConfig = mergeWithRules({
     rules: ["append"],
   },
   plugins: ["append"],
-})([parts.extractCss(), parts.eliminateUnusedCss(), parts.loadJavaScript()]);
+})([parts.extractCss(), parts.eliminateUnusedCss(), parts.loadJavaScript(), { optimization: { splitChunks: { chunks: "all" } } }]);
 
 const getConfig = mode => {
   switch (mode) {

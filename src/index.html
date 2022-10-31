@@ -115,13 +115,13 @@
       <div class="wrapper">
         <h2 class="section-heading">price</h2>
         <p class="price__paragraph">Available options:</p>
-        <form action="" id="price-form" class="price__form">
-          <div class="price__options">
-            <div class="product-option"><p>Hardcover</p></div>
-            <div class="product-option"><p>Paperback</p></div>
-            <div class="product-option"><p>PDF</p></div>
+        <form action="" id="price-form" class="price__form form-price">
+          <div class="form-price__opt">
+            <div><p>Hardcover</p></div>
+            <div class="form-price__opt--selected"><p>Paperback</p></div>
+            <div><p>PDF</p></div>
           </div>
-          <div class="price__seller">
+          <div class="form-price__seller">
             <p>
               <span>Sold by:</span><br />
               <span> BookStorm</span>
@@ -131,14 +131,14 @@
               <span> BookStorm</span>
             </p>
           </div>
-          <div class="price__gift">
+          <div class="form-price__isgift">
             <p>Is it a gift?</p>
             <input id="yes" type="radio" name="is-gift" value="yes" />
             <label for="yes">yes</label>
             <input id="no" type="radio" name="is-gift" value="no" checked />
             <label for="no">no</label>
           </div>
-          <div class="price__partial">
+          <div class="form-price__partial">
             <p>
               <span>Paperback: </span>
               <span><span>US$ </span>10.69</span>
@@ -152,7 +152,7 @@
               <span><span>US$ </span> 0.00</span>
             </p>
           </div>
-          <div class="price__total">
+          <div class="form-price__total">
             <p>
               <span>total: </span><br />
               <span>US$ 12.69</span>

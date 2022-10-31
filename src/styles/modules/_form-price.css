@@ -1,0 +1,31 @@
+.form-price {
+  font: 1rem "Lato";
+
+  > div:not(:first-child) {
+    background-color: #ffd511;
+  }
+
+  &__opt {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+
+  &__opt > div {
+    background-color: #333;
+    color: $text-light;
+    max-height: 32px;
+  }
+
+  &__opt > div.form-price__opt--selected {
+    background-color: #ffd511;
+    color: $text-dark;
+  }
+
+  &__opt p {
+    margin: 0;
+    line-height: 32px;
+    padding-inline-start: 45px;
+    font-weight: 900;
+  }
+}

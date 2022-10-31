@@ -1,0 +1,19 @@
+.price {
+  padding-block-start: 32px;
+
+  &__paragraph {
+    font: 1rem "Lato";
+    line-height: 1;
+    margin: 0;
+    padding-block-end: 16px;
+  }
+
+  &__form {
+    display: flex;
+    column-gap: 16px;
+  }
+
+  &__form div {
+    flex-basis: 160px;
+  }
+}

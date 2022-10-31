@@ -111,5 +111,57 @@
         </ul>
       </div>
     </section>
+    <section class="price">
+      <div class="wrapper">
+        <h2 class="section-heading">price</h2>
+        <p class="price__paragraph">Available options:</p>
+        <form action="" id="price-form" class="price__form">
+          <div class="price__options">
+            <div class="product-option"><p>Hardcover</p></div>
+            <div class="product-option"><p>Paperback</p></div>
+            <div class="product-option"><p>PDF</p></div>
+          </div>
+          <div class="price__seller">
+            <p>
+              <span>Sold by:</span><br />
+              <span> BookStorm</span>
+            </p>
+            <p>
+              <span>Ships from:</span><br />
+              <span> BookStorm</span>
+            </p>
+          </div>
+          <div class="price__gift">
+            <p>Is it a gift?</p>
+            <input id="yes" type="radio" name="is-gift" value="yes" />
+            <label for="yes">yes</label>
+            <input id="no" type="radio" name="is-gift" value="no" checked />
+            <label for="no">no</label>
+          </div>
+          <div class="price__partial">
+            <p>
+              <span>Paperback: </span>
+              <span><span>US$ </span>10.69</span>
+            </p>
+            <p>
+              <span>Shipping fee: </span>
+              <span><span>US$ </span>2.00</span>
+            </p>
+            <p>
+              <span>Gift fee: </span>
+              <span><span>US$ </span> 0.00</span>
+            </p>
+          </div>
+          <div class="price__total">
+            <p>
+              <span>total: </span><br />
+              <span>US$ 12.69</span>
+              <button onclick="this.form.target=''">buy now</button>
+              <button onclick="price-form.action=''">add to cart</button>
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
   </body>
 </html>

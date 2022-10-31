@@ -28,4 +28,34 @@
     padding-inline-start: 45px;
     font-weight: 900;
   }
+
+  &__seller {
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__seller > p {
+    margin: 0;
+    line-height: 1;
+  }
+
+  &__seller > p > span {
+    display: inline-block;
+    padding-block-end: 8px;
+  }
+
+  &__seller > p > span:first-child {
+    font-weight: 900;
+  }
+
+  &__seller > p > span:last-child {
+    padding-inline-start: 8px;
+  }
+
+  &__seller > p:last-child > span:last-child {
+    padding-block-end: 0;
+  }
 }

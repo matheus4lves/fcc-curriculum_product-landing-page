@@ -58,4 +58,40 @@
   &__seller > p:last-child > span:last-child {
     padding-block-end: 0;
   }
+
+  &__isgift {
+    display: flex;
+    flex-direction: column;
+    height: 112px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 45px;
+  }
+
+  &__isgift > p {
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+
+  &__isgift > div {
+    padding-inline-start: 8px;
+    margin-block-start: 4px;
+  }
+
+  &__isgift label {
+    text-transform: uppercase;
+  }
+
+  &__isgift input[type="radio"] {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #333;
+  }
+
+  &__isgift input:checked {
+    background-color: #333;
+  }
 }

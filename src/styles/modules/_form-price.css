@@ -94,4 +94,32 @@
   &__isgift input:checked {
     background-color: #333;
   }
+
+  &__partial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    padding: 0 35px;
+  }
+
+  &__partial > p {
+    margin: 0;
+    line-height: 1;
+  }
+
+  &__partial > p > span:first-child,
+  &__partial span > span {
+    font-weight: 900;
+  }
+
+  &__partial > p > span:last-child {
+    display: inline-block;
+    padding-inline-start: 8px;
+    padding-block: 8px;
+  }
+
+  &__partial > p:last-child > span:last-child {
+    padding-block-end: 0;
+  }
 }

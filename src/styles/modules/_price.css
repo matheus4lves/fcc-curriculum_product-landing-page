@@ -1,5 +1,6 @@
 .price {
   padding-block-start: 32px;
+  padding-block-end: 64px;
 
   &__paragraph {
     font: 1rem "Lato";
@@ -10,7 +11,8 @@
 
   &__form {
     display: flex;
-    column-gap: 16px;
+    flex-wrap: wrap;
+    gap: 16px;
   }
 
   &__form > div {

@@ -29,6 +29,12 @@
     font-weight: 900;
   }
 
+  @mixin atSmall {
+    &__opt {
+      min-width: 336px;
+    }
+  }
+
   &__seller {
     height: 112px;
     display: flex;

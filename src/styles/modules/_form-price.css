@@ -122,4 +122,44 @@
   &__partial > p:last-child > span:last-child {
     padding-block-end: 0;
   }
+
+  &__total {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+  }
+
+  &__total > p {
+    margin: 0 auto;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+
+  &__total > p > span {
+    display: inline-block;
+    padding-block-end: 8px;
+  }
+
+  &__total > p > span:last-child {
+    padding-inline-start: 8px;
+    font-size: 1.125rem;
+  }
+
+  &__total > button {
+    background-color: #333;
+    color: $text-light;
+    text-transform: uppercase;
+
+    width: 128px;
+
+    border: none;
+    padding-block: 8px;
+    margin: 0 auto;
+  }
+
+  &__total > button:first-of-type {
+    margin-block-end: 8px;
+  }
 }

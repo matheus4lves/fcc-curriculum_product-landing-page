@@ -7,6 +7,7 @@ const glob = require("glob");
 const { PurgeCSSPlugin } = require("purgecss-webpack-plugin");
 const ALL_FILES = glob.sync(path.join(__dirname, "./src/**/*.html"));
 const CssMinimizerWebpackPlugin = require("css-minimizer-webpack-plugin");
+const TerserWebpackPlugin = require("terser-webpack-plugin");
 
 const cssConfig = {
   module: {
@@ -132,4 +133,8 @@ exports.minifyCSS = ({ options }) => ({
   optimization: {
     minimizer: [new CssMinimizerWebpackPlugin({ minimizerOptions: options })],
   },
+});
+
+exports.minifyJavaScript = () => ({
+  optimization: { minimizer: [new TerserWebpackPlugin()] },
 });

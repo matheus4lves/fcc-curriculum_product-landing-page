@@ -138,3 +138,14 @@ exports.minifyCSS = ({ options }) => ({
 exports.minifyJavaScript = () => ({
   optimization: { minimizer: [new TerserWebpackPlugin()] },
 });
+
+exports.loadFonts = () => ({
+  module: {
+    rules: [
+      {
+        test: /\.(ttf|eot|woff|woff2)$/,
+        type: "asset/inline",
+      },
+    ],
+  },
+});

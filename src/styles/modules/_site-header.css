@@ -3,6 +3,8 @@
   flex-direction: column;
   background-color: $header-bg;
   block-size: 11.25rem;
+  position: sticky;
+  top: 0;
 
   &__logo {
     grid-row: 1 / 4;

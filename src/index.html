@@ -10,11 +10,11 @@
     <header id="header" class="site-header">
       <div class="wrapper grid-container">
         <img id="header-img" class="site-header__logo" src="images/logo.png" alt="Logo" />
-        <nav id="nav-bar" class="site-header__primary-nav primary-nav">
+        <nav class="site-header__primary-nav primary-nav">
           <ul class="primary-nav__list">
-            <li class="primary-nav__item"><a class="nav-link primary-nav__link" href="#">deals</a></li>
-            <li class="primary-nav__item"><a class="nav-link primary-nav__link" href="#">bestsellers</a></li>
-            <li class="primary-nav__item"><a class="nav-link primary-nav__link" href="#">wishlist</a></li>
+            <li class="primary-nav__item"><a class="primary-nav__link" href="">deals</a></li>
+            <li class="primary-nav__item"><a class="primary-nav__link" href="">bestsellers</a></li>
+            <li class="primary-nav__item"><a class="primary-nav__link" href="">wishlist</a></li>
           </ul>
         </nav>
         <form class="site-header__search search" action="">
@@ -36,31 +36,32 @@
           <a class="login__link" href="">login</a>
         </div>
       </div>
-      <nav class="site-header__product-nav product-nav">
+      <nav id="nav-bar" class="site-header__product-nav product-nav">
         <div class="wrapper">
           <ul class="product-nav__list">
-            <li class="product-nav__item"><a class="product-nav__link" href="#description">description</a></li>
-            <li class="product-nav__item"><a class="product-nav__link" href="#details">details</a></li>
-            <li class="product-nav__item"><a class="product-nav__link" href="#price">price</a></li>
+            <li class="product-nav__item"><a class="nav-link product-nav__link" href="#description">description</a></li>
+            <li class="product-nav__item"><a class="nav-link product-nav__link" href="#details">details</a></li>
+            <li class="product-nav__item"><a class="nav-link product-nav__link" href="#price">price</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
       <section class="wrapper">
-        <form class="subscribe" action="">
+        <form id="form" class="subscribe" action="https://www.freecodecamp.com/email-submit">
           <p class="subscribe__text">get daily offers in your inbox</p>
-          <input class="subscribe__input" type="email" placeholder="Enter your email address" required />
-          <button class="subscribe__btn">Subscribe</button>
+          <input id="email" class="subscribe__input" type="email" placeholder="Enter your email address" name="email" required />
+          <input id="submit" type="submit" class="subscribe__btn" value="Subscribe" />
         </form>
       </section>
       <section id="description" class="description grid-container wrapper">
         <h2 class="section-heading">description</h2>
         <div class="gallery">
           <div class="gallery__img-main">
-            <img src="./images/como-ler-livros-1.jpg" alt="" />
+            <iframe id="video" width="375" height="481" src="https://www.youtube.com/embed/Twp9BIuxkp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="gallery__img-thumbnail">
+            <img src="./images/como-ler-livros-video.png" alt="" />
             <img src="./images/como-ler-livros-1.jpg" alt="" />
             <img src="./images/como-ler-livros-2.jpg" alt="" />
             <img src="./images/como-ler-livros-3.jpg" alt="" />

@@ -1,9 +1,4 @@
 .primary-nav {
-  grid-row: 1 / 2;
-  grid-column: 5 / 11;
-  text-transform: uppercase;
-  margin-block-start: -21px;
-
   &__list {
     display: flex;
     justify-content: center;

@@ -1,13 +1,4 @@
 .search {
-  grid-row: 2 / 3;
-  grid-column: 5 / 11;
-  position: relative;
-  top: 10px;
-  display: flex;
-  background-color: $text-light;
-  height: 32px;
-  border-radius: 8px;
-
   &__select-wrapper::before {
     content: url("/src/images/dropdown-icon-12.png");
     position: absolute;

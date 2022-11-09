@@ -7,17 +7,17 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="site-header">
+    <header id="header" class="site-header">
       <div class="wrapper grid-container">
-        <img class="logo" src="images/logo.png" alt="Logo" />
-        <nav class="primary-nav">
+        <img id="header-img" class="site-header__logo" src="images/logo.png" alt="Logo" />
+        <nav id="nav-bar" class="site-header__primary-nav primary-nav">
           <ul class="primary-nav__list">
-            <li class="primary-nav__item"><a class="primary-nav__link" href="#">deals</a></li>
-            <li class="primary-nav__item"><a class="primary-nav__link" href="#">bestsellers</a></li>
-            <li class="primary-nav__item"><a class="primary-nav__link" href="#">wishlist</a></li>
+            <li class="primary-nav__item"><a class="nav-link primary-nav__link" href="#">deals</a></li>
+            <li class="primary-nav__item"><a class="nav-link primary-nav__link" href="#">bestsellers</a></li>
+            <li class="primary-nav__item"><a class="nav-link primary-nav__link" href="#">wishlist</a></li>
           </ul>
         </nav>
-        <form class="search" action="">
+        <form class="site-header__search search" action="">
           <input class="search__input" type="text" name="search" />
           <div class="search__select-wrapper">
             <select class="select" name="categories">
@@ -31,142 +31,144 @@
           </div>
           <button class="search__btn" type="submit">Search</button>
         </form>
-        <div class="login">
+        <div class="site-header__login login">
           <img class="login__icon" src="images/user-icon.png" alt="" />
           <a class="login__link" href="">login</a>
         </div>
       </div>
+      <nav class="site-header__product-nav product-nav">
+        <div class="wrapper">
+          <ul class="product-nav__list">
+            <li class="product-nav__item"><a class="product-nav__link" href="#description">description</a></li>
+            <li class="product-nav__item"><a class="product-nav__link" href="#details">details</a></li>
+            <li class="product-nav__item"><a class="product-nav__link" href="#price">price</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    <nav class="product-nav">
-      <div class="wrapper">
-        <ul class="product-nav__list">
-          <li class="product-nav__item"><a class="product-nav__link" href="#description">description</a></li>
-          <li class="product-nav__item"><a class="product-nav__link" href="#details">details</a></li>
-          <li class="product-nav__item"><a class="product-nav__link" href="#price">price</a></li>
-        </ul>
-      </div>
-    </nav>
-    <section class="wrapper">
-      <form class="subscribe" action="">
-        <p class="subscribe__text">get daily offers in your inbox</p>
-        <input class="subscribe__input" type="email" placeholder="Enter your email address" required />
-        <button class="subscribe__btn">Subscribe</button>
-      </form>
-    </section>
-    <section class="description grid-container wrapper">
-      <h2 class="section-heading">description</h2>
-      <div class="gallery">
-        <div class="gallery__img-main">
-          <img src="./images/como-ler-livros-1.jpg" alt="" />
-        </div>
-        <div class="gallery__img-thumbnail">
-          <img src="./images/como-ler-livros-1.jpg" alt="" />
-          <img src="./images/como-ler-livros-2.jpg" alt="" />
-          <img src="./images/como-ler-livros-3.jpg" alt="" />
-        </div>
-      </div>
-      <div class="description__content">
-        <h3 class="description__title">How to read a book: The classic guide to intelligent reading</h3>
-        <div class="description__text">
-          <p class="description__text--bold">With half a million copies in print, How to Read a Book is the best and most successful guide to reading comprehension for the general reader, completely rewritten and updated with new material.</p>
-          <p class="description__text--bold">A CNN Book of the Week: “Explains not just why we should read books, but how we should read them. It's masterfully done.” –Farheed Zakaria</p>
-          <p>Originally published in 1940, this book is a rare phenomenon, a living classic that introduces and elucidates the various levels of reading and how to achieve them—from elementary reading, through systematic skimming and inspectional reading, to speed reading. Readers will learn when and how to “judge a book by its cover,” and also how to X-ray it, read critically, and extract the author’s message from the text.</p>
-          <p>Also included is instruction in the different techniques that work best for reading particular genres, such as practical books, imaginative literature, plays, poetry, history, science and mathematics, philosophy and social science works.</p>
-          <p>Finally, the authors offer a recommended reading list and supply reading tests you can use measure your own progress in reading skills, comprehension, and speed.</p>
-        </div>
-      </div>
-    </section>
-    <section class="wrapper">
-      <div class="details">
-        <h2 class="section-heading">details</h2>
-        <ul class="details__list">
-          <li class="details__item">
-            <img class="details__icon" src="./images/language-icon.png" alt="" />
-            <p><span>Language:</span><br />portuguese</p>
-          </li>
-          <li class="details__item">
-            <img class="details__icon" src="./images/page-icon.png" alt="" />
-            <p><span>Number of pages:</span><br />432</p>
-          </li>
-          <li class="details__item">
-            <img class="details__icon" src="./images/hard-cover-book-icon.png" alt="" />
-            <p><span>Cover material:</span><br />parperback</p>
-          </li>
-          <li class="details__item">
-            <img class="details__icon" src="./images/dimensions-icon.png" alt="" />
-            <p><span>Dimensions:</span><br />24.8 x 18 x 3</p>
-          </li>
-          <li class="details__item">
-            <img class="details__icon" src="./images/weighing-machine-icon.png" alt="" />
-            <p><span>Weight:</span><br />338g</p>
-          </li>
-          <li class="details__item">
-            <img class="details__icon" src="./images/calendar-icon.png" alt="" />
-            <p><span>Publication date:</span><br />jun 15, 2010</p>
-          </li>
-          <li class="details__item">
-            <img class="details__icon" src="./images/barcode-icon.png" alt="" />
-            <p><span>ISBN:</span><br />978-8588062894</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="price">
-      <div class="wrapper">
-        <h2 class="section-heading">price</h2>
-        <p class="price__paragraph">Available options:</p>
-        <form action="" id="price-form" class="price__form form-price">
-          <div class="form-price__opt">
-            <div><p>Hardcover</p></div>
-            <div class="form-price__opt--selected"><p>Paperback</p></div>
-            <div><p>PDF</p></div>
-          </div>
-          <div class="form-price__seller">
-            <p>
-              <span>Sold by:</span><br />
-              <span>BookStorm</span>
-            </p>
-            <p>
-              <span>Ships from:</span><br />
-              <span>BookStorm</span>
-            </p>
-          </div>
-          <div class="form-price__isgift">
-            <p>Is it a gift?</p>
-            <div>
-              <input id="yes" type="radio" name="is-gift" value="yes" />
-              <label for="yes">yes</label>
-            </div>
-            <div>
-              <input id="no" type="radio" name="is-gift" value="no" checked />
-              <label for="no">no</label>
-            </div>
-          </div>
-          <div class="form-price__partial">
-            <p>
-              <span>Paperback: </span><br />
-              <span><span>US$ </span>10.69</span>
-            </p>
-            <p>
-              <span>Shipping fee: </span><br />
-              <span><span>US$ </span>2.00</span>
-            </p>
-            <p>
-              <span>Gift fee: </span><br />
-              <span><span>US$ </span> 0.00</span>
-            </p>
-          </div>
-          <div class="form-price__total">
-            <p>
-              <span>total: </span><br />
-              <span>US$ 12.69</span>
-            </p>
-            <button onclick="this.form.target=''">buy now</button>
-            <button onclick="price-form.action=''">add to cart</button>
-          </div>
+    <main>
+      <section class="wrapper">
+        <form class="subscribe" action="">
+          <p class="subscribe__text">get daily offers in your inbox</p>
+          <input class="subscribe__input" type="email" placeholder="Enter your email address" required />
+          <button class="subscribe__btn">Subscribe</button>
         </form>
-      </div>
-    </section>
+      </section>
+      <section id="description" class="description grid-container wrapper">
+        <h2 class="section-heading">description</h2>
+        <div class="gallery">
+          <div class="gallery__img-main">
+            <img src="./images/como-ler-livros-1.jpg" alt="" />
+          </div>
+          <div class="gallery__img-thumbnail">
+            <img src="./images/como-ler-livros-1.jpg" alt="" />
+            <img src="./images/como-ler-livros-2.jpg" alt="" />
+            <img src="./images/como-ler-livros-3.jpg" alt="" />
+          </div>
+        </div>
+        <div class="description__content">
+          <h3 class="description__title">How to read a book: The classic guide to intelligent reading</h3>
+          <div class="description__text">
+            <p class="description__text--bold">With half a million copies in print, How to Read a Book is the best and most successful guide to reading comprehension for the general reader, completely rewritten and updated with new material.</p>
+            <p class="description__text--bold">A CNN Book of the Week: “Explains not just why we should read books, but how we should read them. It's masterfully done.” –Farheed Zakaria</p>
+            <p>Originally published in 1940, this book is a rare phenomenon, a living classic that introduces and elucidates the various levels of reading and how to achieve them—from elementary reading, through systematic skimming and inspectional reading, to speed reading. Readers will learn when and how to “judge a book by its cover,” and also how to X-ray it, read critically, and extract the author’s message from the text.</p>
+            <p>Also included is instruction in the different techniques that work best for reading particular genres, such as practical books, imaginative literature, plays, poetry, history, science and mathematics, philosophy and social science works.</p>
+            <p>Finally, the authors offer a recommended reading list and supply reading tests you can use measure your own progress in reading skills, comprehension, and speed.</p>
+          </div>
+        </div>
+      </section>
+      <section id="details" class="wrapper">
+        <div class="details">
+          <h2 class="section-heading">details</h2>
+          <ul class="details__list">
+            <li class="details__item">
+              <img class="details__icon" src="./images/language-icon.png" alt="" />
+              <p><span>Language:</span><br />portuguese</p>
+            </li>
+            <li class="details__item">
+              <img class="details__icon" src="./images/page-icon.png" alt="" />
+              <p><span>Number of pages:</span><br />432</p>
+            </li>
+            <li class="details__item">
+              <img class="details__icon" src="./images/hard-cover-book-icon.png" alt="" />
+              <p><span>Cover material:</span><br />parperback</p>
+            </li>
+            <li class="details__item">
+              <img class="details__icon" src="./images/dimensions-icon.png" alt="" />
+              <p><span>Dimensions:</span><br />24.8 x 18 x 3</p>
+            </li>
+            <li class="details__item">
+              <img class="details__icon" src="./images/weighing-machine-icon.png" alt="" />
+              <p><span>Weight:</span><br />338g</p>
+            </li>
+            <li class="details__item">
+              <img class="details__icon" src="./images/calendar-icon.png" alt="" />
+              <p><span>Publication date:</span><br />jun 15, 2010</p>
+            </li>
+            <li class="details__item">
+              <img class="details__icon" src="./images/barcode-icon.png" alt="" />
+              <p><span>ISBN:</span><br />978-8588062894</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="price" class="price">
+        <div class="wrapper">
+          <h2 class="section-heading">price</h2>
+          <p class="price__paragraph">Available options:</p>
+          <form action="" id="price-form" class="price__form form-price">
+            <div class="form-price__opt">
+              <div><p>Hardcover</p></div>
+              <div class="form-price__opt--selected"><p>Paperback</p></div>
+              <div><p>PDF</p></div>
+            </div>
+            <div class="form-price__seller">
+              <p>
+                <span>Sold by:</span><br />
+                <span>BookStorm</span>
+              </p>
+              <p>
+                <span>Ships from:</span><br />
+                <span>BookStorm</span>
+              </p>
+            </div>
+            <div class="form-price__isgift">
+              <p>Is it a gift?</p>
+              <div>
+                <input id="yes" type="radio" name="is-gift" value="yes" />
+                <label for="yes">yes</label>
+              </div>
+              <div>
+                <input id="no" type="radio" name="is-gift" value="no" checked />
+                <label for="no">no</label>
+              </div>
+            </div>
+            <div class="form-price__partial">
+              <p>
+                <span>Paperback: </span><br />
+                <span><span>US$ </span>10.69</span>
+              </p>
+              <p>
+                <span>Shipping fee: </span><br />
+                <span><span>US$ </span>2.00</span>
+              </p>
+              <p>
+                <span>Gift fee: </span><br />
+                <span><span>US$ </span> 0.00</span>
+              </p>
+            </div>
+            <div class="form-price__total">
+              <p>
+                <span>total: </span><br />
+                <span>US$ 12.69</span>
+              </p>
+              <button onclick="this.form.target=''">buy now</button>
+              <button onclick="price-form.action=''">add to cart</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
     <footer class="site-footer">
       <div class="wrapper grid-container">
         <img class="site-footer__logo" src="images/logo.png" alt="" />
